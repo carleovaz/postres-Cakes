@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+	<title>Pago del postre</title>
+	<meta charset="UTF-8">
+	<link rel="icon" href="imagenes/icono.ico" type="image/ico" />
+	<link rel="stylesheet" type="text/css" href="estilos.css" />
+	<script type="text/javascript" src="06 archivoJS.js"></script>
+</head>
+
+<body id="paginaPagos">
+	<h2>Aquí podrá comprar el paquete con la oferta correspondiente de la página</h2><br />
+	<h3> <span>¡Atención! Se necesitan los siguientes requisitos:</span></h3>
+	<ul>
+		<li><span> Solo se admite la divisa Euro (€).</span> </li>
+		<li>Pertenecer a una comunidad autonoma de España</li>
+		<li>Los envíos fuera de la península ibérica tendrán un coste adicional por el transporte </li>
+		<li>Dispones del google map para consultar la dirección en el caso de que tengas dudas.</li>
+	</ul>
+	<iframe
+		src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101459.59291827127!2d-6.0250982791054115!3d37.37535009889958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126c1114be6291%3A0x34f018621cfe5648!2sSevilla!5e0!3m2!1ses!2ses!4v1607977210892!5m2!1ses!2ses"
+		width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+		tabindex="0"></iframe>
+	<img class="carrito" src="imagenes/carrito.png" alt="carro de compra">
+	<form action="control_form.php" method="get">
+		<fieldset class="campos1">
+			<legend> <img alt="Imagen para acceder" width="16" src="./imagenes/grupito.png" /> Datos personales
+			</legend>
+			<input type="text" name="text" placeholder="Escriba su DNI (Solo números)" maxlength="8"
+				title="Instroduzca un email válido" pattern="[0-9]*" required onchange="evento3();" /><br />
+			<table>
+				<tbody>
+					<tr>
+						<td><label>Primer Apellido(*) </label><br /><input type="text" name="Apellidos"
+								placeholder="Escriba su primer apellido (en mayúsculas)" maxlength="50"
+								title="Instroduzca solo letras en mayúscula" pattern="[A-Z]*" required /> </td>
+						<!-- Required siempre va al final-->
+						<td><label>Segundo Apellido(*) </label><br /><input type="text" name="Apellidos"
+								placeholder="Escriba su segundo apellido (en mayúsculas)" maxlength="50"
+								title="Instroduzca solo letras en mayúscula" pattern="[A-Z]*" required /> </td>
+						<!-- Required siempre va al final-->
+						<td><label>Nombre(*)</label><br /><input type="text" name="Nombre"
+								placeholder="Escriba su Nombre (En mayúsculas)" maxlength="50"
+								title="Instroduzca solo letras mayúsculas" pattern="[A-Z]*" required onkeydown="evento4('Has introducido un caracter.')" /> 
+								<input button type="button" value="Nombre aleatorio" onclick="random();">
+							</td>
+					</tr>
+					<tr>
+						<td> <label> Nacido en (dd/mm/aaaa):<br /><input type="date" value="1990-01-01"></label> </td>
+						<td> <label> Comunidad Autónoma<br /></label>
+							<select name="Comunidades">
+								<option value="1"> Andalucía </option>
+								<option value="3"> Aragón </option>
+								<option value="4"> Principado de Asturias </option>
+								<option value="5"> Baleares </option>
+								<option value="6"> Canarias </option>
+								<option value="7"> Cantabria </option>
+								<option value="8"> Castilla-La Mancha </option>
+								<option value="9"> Castilla y León </option>
+								<option value="10"> Cataluña </option>
+								<option value="11" selected="selected"> Extremadura </option>
+								<option value="12"> Galicia </option>
+								<option value="13"> La Rioja </option>
+								<option value="14"> Comunidad de Madrid </option>
+								<option value="15"> Región de Murcia </option>
+								<option value="16"> Navarra </option>
+								<option value="17"> País Vasco </option>
+								<option value="18"> Valencia </option>
+							</select>
+						<td> <label> Dirección (Ciudad / Calle / Vivienda) <br /> </label> <input type="text"
+								name="Direccion" placeholder="Ciudad/Calle/Vivienda" maxlength="119" required /> </td>
+						<td><label>Codigo Postal<br /></label> <input type="text" name="CP" placeholder="Escribe tu CP"
+								maxlength="5" pattern="[0-9]*" required /> </td>
+					</tr>
+				</tbody>
+			</table>
+		</fieldset>
+		<h2> <span>Por favor, a continuación seleccione el método de pago</span></h2>
+		<fieldset>
+			<table class="campos2">
+				<tbody>
+					<tr>
+						<td>
+							<h3>Forma de pago</h3>
+						</td>
+					</tr>
+					<tr>
+						<td> <br /> <img alt="Imagen para registrar" width="16" src="./imagenes/tarjeta.svg" /><input
+								type="radio" name="disponivilidad" value="publico" />Tarjeta de crédito</td>
+					</tr>
+					<tr>
+						<td> <label>Número de tarjeta(*)</label><br /><input type="text" name="Tarjeta"
+								placeholder="Escriba el número de su tarjeta (Sin letra)"
+								title="Instroduzca solo números" maxlength="16" pattern="[0-9]*" required="" /> </td>
+						<td> <label> Fecha de caducidad:</label><br /> <input type="date" /></td>
+						<input button type="button" value="¿Que fecha es hoy? (formato 1)" onclick="fecha1();">
+						<input button type="button" value="¿Que fecha es hoy? (formato 2)" onclick="fecha2();">
+					</tr>
+					<tr>
+						<td> <img alt="Imagen para registrar" width="16" src="./imagenes/billetes.svg" /><input
+								type="radio" name="disponivilidad" value="dinero" />En metálico</td>
+						<td><br /> (Para realizar un pago en metálico, deberá hacerlo mediante la entrega de un
+							formulario a la entidad bancaria y allí realizará el pago en efectivo ) <button
+								type="button">Descargar Formulario</button> </td>
+					</tr>
+					<tr>
+						<td> <img alt="Imagen para registrar" width="16" src="./imagenes/paysafecard.svg" /><input
+								type="radio" name="disponivilidad" value="publico" />PaysafeCard</td>
+
+					</tr>
+					<tr>
+						<td> <label>Código(*)</label><br /><input type="text" name="Tarjeta"
+								placeholder="Escriba el código de su tarjeta" title="Instroduzca solo números"
+								maxlength="16" pattern="[0-9]*" required="" /> 
+						</td>
+						<td><br /> (Este es el método más seguro) <img alt="Imagen para registrar" width="16"
+								src="./imagenes/pulgarArriba.svg" />
+								
+						</td>
+					</tr>
+					
+				</tbody>
+			</table>
+		</fieldset>
+		<button class="myButton" type="submit"><img alt="Imagen para registrar" width="16" src="./imagenes/llave.png" />
+			Confirmar el pago</button>
+		<button class="myButton" type="reset" onreset=""><img alt="Imagen para borrar" width="16"
+				src="./imagenes/borrar.svg"><a href="01 practicaLM3Pagina_Principal.html">Cancelar (regresar a
+				Inicio)</a></button>
+	</form>
+</body>
+
+</html>

@@ -1,0 +1,757 @@
+/*Estilos de la página principal*/
+@keyframes desplazamiento
+{
+    0%
+    {
+        margin-left: 0px;
+        transform: rotate();
+    }
+
+    50%
+    {
+        margin-left:1200px;
+        transform: rotate(306deg);
+    }
+
+    to
+    {
+        margin-left:772px;
+        transform: rotate(0);
+    }
+}
+
+body#paginaPrincipal
+{
+    background-image: url(imagenes/patron\ pasteles.jpg);
+    margin-bottom: 10%;
+    
+}
+
+
+.imagenCabecera
+{
+    border-radius:50%;
+    display:block;
+    margin:auto;
+    border: dashed 5px lightcoral;
+    animation-name: desplazamiento;
+    animation-duration: 10s;
+    animation-iteration-count: initial;
+    animation-timing-function:initial;
+    
+
+}
+
+.botones
+
+    {
+        text-align: center;
+        padding: 0px;
+    }
+
+.botones ul
+    {
+        list-style: none;
+        display: inline-block;
+        padding:18px;
+    }
+  
+.botones li 
+        {
+        display: inline;
+        
+
+        }
+
+.botones  li a    
+        {
+        font-size: 12px;
+        text-decoration: none;
+        float: left;
+        width: 150px;
+        padding: 10px;
+        background-color: rgb(231, 165, 176);
+        color: #fff;
+        border: solid 2px white;
+        transition: all 500ms;
+        }
+
+.botones  li a:hover 
+        {
+        background-color: #d72569;
+        text-transform: uppercase;
+        border-radius: 55% ;
+        margin-top: -2;
+        padding-bottom: 12px;
+        box-shadow: 2px 2px 5px #999;
+        
+        }
+
+.introduccion 
+{
+    background-color:rgb(233, 230, 230);
+    width: 800px;
+    height: 800px;
+    padding: 20px;
+    margin:auto;
+    border-top: 5px solid plum;
+    border-bottom:10px solid plum;
+    border-right:5px dashed plum;
+    border-left: 5px dashed plum;
+    border-radius: 5%; 
+    text-align: justify;
+
+    
+}
+
+
+.introduccion img
+{
+    border-radius: 30px;
+    margin-left: 185px;
+}
+
+.Tituloprincipal 
+{
+    background: linear-gradient(#e2e2e2, #d48ec9);
+    border-radius: 30px;
+    width: 650px;
+    text-shadow: 20px lightseagreen;
+    border: solid 2px plum;
+}
+
+.introduccion h3 
+
+{
+    background: linear-gradient(#e2e2e2, #d48ec9);
+    border-radius: 30px;
+    width: 130px;
+    text-shadow: 20px lightseagreen;
+    border: solid 2px plum;
+}
+
+
+.nudo 
+{
+    background: linear-gradient(tomato 20%, cyan 60%, lightgreen 100%);
+    width: 800px;
+    margin:15px;
+    padding: 15px;
+    border-radius: 5%;
+    border: solid 5px brown;
+    text-align: justify;
+
+}
+
+.nudo h3 
+{
+    background: linear-gradient(#916421, #ffffff);
+    width: 450px;
+    border-radius: 30px;
+    text-shadow: 20px lightseagreen;
+    
+}
+
+.nudo h4 
+{
+    background: linear-gradient(#916421, #ffffff);
+    width: 280px;
+    border-radius: 30px;
+    text-shadow: 20px lightseagreen;
+  
+
+}
+
+.nudo img 
+{
+    border-radius: 50%;
+    margin-left:30%;
+}
+
+.desenlace 
+{
+    
+    background: linear-gradient(cyan 60%, lightgreen 100%);
+    width: 500px;
+    padding: 15px;
+    border-radius: 5%;
+    border: dotted 4px blueviolet;
+    float:right;
+    position:absolute; right:20px;
+    position:absolute; top:155%;
+    text-align: justify;
+    display: block;
+    
+
+}
+
+.desenlace h4
+{
+    background: linear-gradient(#916421, #ffffff);
+    width: 120px;
+    border-radius: 30px;
+    text-shadow: 20px lightseagreen;
+}
+
+.desenlace img 
+{
+    width: 40%;
+    margin-left: 5%;
+    box-shadow: 10px 12px 10px black;
+    border-radius: 30px 0px 0px 30px;
+
+}
+
+
+.ultimoParrafo 
+{
+    background-color: burlywood;
+    width: 28%;
+    text-align: center;
+    position:absolute; top:245%;
+    position:absolute; right:20px;
+    display: block;
+    border: solid 2px black;
+
+}
+
+.ultimoParrafo h2
+{
+    text-align: center;
+    background-color:pink;
+    border-radius: 50%;
+}
+
+.ultimaImagen
+{
+    width: 25%;
+    position:absolute; right:20px;
+    position:absolute; top:265%;
+    border: solid 2px ;
+    border-radius: 30%;
+}
+
+.pie 
+{
+    background-color: pink;
+    width: 40%;
+    height: 40px;
+    color: black;
+    border: solid black 2px;
+    text-align: center;
+    display: block;
+    position:absolute; top:350%;
+    position: absolute; left: 50%;
+    margin-top: -200px;
+    margin-left: -300px; 
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+/*Estilos de la página Tiramisu*/
+
+body#paginaTiramisu 
+{
+    background-image: url(imagenes/patronchocolate.jpg);
+    
+}
+
+.botonesTiramisu
+
+    {
+        text-align: center;
+        padding: 0px;
+    }
+
+.tituloTiramisu 
+{
+    background: linear-gradient(#e2e2e2, #c28330);
+    border-radius: 30px;
+    width: 650px;
+    text-shadow: 20px lightseagreen;
+    border: solid 2px rgb(0, 0, 0);
+    text-align: center;
+    border: solid 2px yellow;
+    width: 50%;
+    margin: auto;
+    border-radius: 30px;
+}
+
+
+.botonesTiramisu ul
+    {
+        list-style: none;
+        display: inline-block;
+        padding:18px;
+    }
+  
+.botonesTiramisu li 
+        {
+        display: inline;
+        }
+
+.botonesTiramisu  li a    
+        {
+        font-size: 12px;
+        text-decoration: none;
+        float: left;
+        width: 150px;
+        padding: 10px;
+        background-color: brown;
+        color: #fff;
+        border: solid 2px white;
+        transition: all 500ms;
+        }
+
+.botonesTiramisu  li a:hover 
+        {
+        background-color: #d72569;
+        text-transform: uppercase;
+        border-radius: 55% ;
+        margin-top: -2;
+        padding-bottom: 12px;
+        box-shadow: 2px 2px 5px #999;
+        
+        }
+
+.podcast 
+{
+   display: block;
+   margin: auto;
+}
+
+
+
+.introduccionTiramisu 
+{
+    background: linear-gradient(90deg, yellow 10%, orange 90%);
+    border-radius: 0px 30px 30px 0px;
+    border: solid 2px black;
+    padding: 15px;
+    
+}
+
+.nudoTiramisu 
+{
+    background: linear-gradient(90deg, yellow 10%, orange 90%);
+    width: 40%;
+    padding: 10px;
+    text-align: justify;
+    position: absolute; bottom: -40%;
+    margin:50px;
+    padding: 15px;
+    border-radius: 0px 30px 30px 0px;
+    border: solid 2px black;
+    
+
+}
+
+.preparacion table 
+{
+    background: linear-gradient(90deg, yellow 10%, orange 90%);
+    display: block;
+    position:absolute; left: 45%;
+    position: absolute; bottom: -70%;
+    border: solid 2px black;
+}
+
+.preparacion table th 
+{
+    border: solid 2px black;
+}
+
+.preparacion table td
+{
+    border: solid 2px black;
+    border-radius: 15px;
+}
+
+.preparacion table img
+{
+    border-radius: 15px;
+}
+
+.desenlaceTiramisu 
+{
+    background: linear-gradient(90deg, yellow 10%, orange 90%);
+    position:absolute; left: 70%;
+    position: absolute; bottom: -95px;
+    width: 25%;
+    border-radius: 0px 30px 30px 0px;
+    border: solid 2px black;
+}
+
+
+
+
+
+
+
+
+/*Estilos de la página pagos*/
+
+body#paginaPagos 
+{
+    background-position: center center;
+    background-image: url(imagenes/patronblanco.jpg);
+    background-repeat: repeat;
+}
+
+body#paginaPagos h2
+{
+    background: linear-gradient(#000000, #706e6e);
+    border: solid 2px black;
+    border-radius: 0px 50px 50px 0px ;
+    color: white;
+    width: 750px;
+
+
+}
+
+body#paginaPagos h3
+{
+    text-decoration: underline;
+    font-style:italic;
+}
+
+.campos1 
+{
+    background: radial-gradient(circle, rgb(133, 160, 147), rgb(245, 245, 245));
+}
+
+.campos2
+{
+
+    background: radial-gradient(circle, rgb(133, 160, 147), rgb(245, 245, 245));
+    width: 100%;
+}
+
+
+
+.myButton 
+{
+    box-shadow: 0px 0px 0px 2px #9fb4f2;
+    background: linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+    background-color: #7892c2;
+    border-radius: 10px;
+    border: 1px solid #4e6096;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 19px;
+    padding: 12px 37px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #283966;
+}
+
+.myButton:hover {
+    background: linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+    background-color: #476e9e;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+.myButton a {
+    text-decoration: none;
+    color: white;
+}
+
+.carrito 
+{
+    border-radius: 50%;
+    width: 400px;
+}
+
+
+
+
+/*Estilos de la página de agradecimientos*/
+
+#paginaAgradecimientos 
+
+{
+    background-image: url(imagenes/patronpapel.jpg);
+}
+
+
+.botonesAgradecimientos
+
+    {
+        text-align: center;
+        padding: 0px;
+    }
+
+.botonesAgradecimientos ul
+    {
+        list-style: none;
+        display: inline-block;
+        padding:18px;
+    }
+
+.botonesAgradecimientos li 
+        {
+        display: inline;
+        
+
+        }
+
+.botonesAgradecimientos li a    
+        {
+        font-size: 12px;
+        text-decoration: none;
+        float: left;
+        width: 150px;
+        padding: 10px;
+        background: linear-gradient(#916421, #000000);
+        color: #fff;
+        border: solid 2px yellow;
+        transition: all 500ms;
+        }
+
+.botonesAgradecimientos  li a:hover 
+        {
+        background-color: #000000;
+        text-transform: uppercase;
+        border-radius: 55% ;
+        margin-top: -2;
+        padding-bottom: 12px;
+        box-shadow: 2px 2px 5px #999;
+        
+        }
+
+.tituloAgradecimientos 
+
+{
+    background: linear-gradient(#e2e2e2, #68752b);
+    border-radius: 30px;
+    width: 650px;
+    text-shadow: 20px lightseagreen;
+    border: solid 2px rgb(0, 0, 0);
+    text-align: center;
+    border: solid 2px rgb(8, 8, 8);
+    width: 50%;
+    margin: auto;
+    border-radius: 30px;
+}
+
+
+#paginaAgradecimientos > p
+{
+    background: radial-gradient(circle, rgb(65, 135, 153), white);
+    width: 50%;
+    display: block;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0px 0px 0px 5px #9fb4f2;
+    
+}
+
+#paginaAgradecimientos  > ul >li
+{
+    
+    text-align: center;
+    list-style: none;
+    border: solid 2px black;
+    width: 20%;
+    margin: auto;
+    background-color: white;
+    border-radius: 40%;
+}
+
+#paginaAgradecimientos  > ul >p
+{
+    background: radial-gradient(circle, rgb(65, 135, 153), white);
+    border: solid 2px black;
+    text-align: center;
+    width: 20%;
+    margin: auto;
+    background-color: white;
+    
+}
+
+
+#paginaAgradecimientos li a
+{
+    text-decoration: none;
+    color: rgb(63, 110, 57);
+}
+
+#paginaAgradecimientos li a:visited
+{
+    text-decoration: none;
+    color: orange;
+}
+
+#paginaAgradecimientos li a:active
+{
+    text-decoration: none;
+    
+}
+
+#paginaAgradecimientos li a:hover 
+{
+    background-color: rgb(85, 74, 74);
+    text-transform: uppercase;
+    box-shadow: 2px 2px 5px #999;
+    transition: all 200ms;
+
+}
+
+@keyframes aplaudiendo
+{
+    from
+    {
+        margin-left: 0px;
+       
+    }
+
+    to
+    {
+        margin-left:805px;
+       
+    }
+}
+
+
+.aplausos 
+{
+    display: block;
+    width: 300px;
+    margin: auto;
+    animation-name: aplaudiendo;
+    animation-duration: 5s;
+    animation-iteration-count: initial;
+    animation-timing-function:initial;
+}
+
+footer > p
+{
+    display: block;
+    margin: auto;
+}
+
+/*Estilos de la página de etiquetas*/
+
+#paginaEtiquetas 
+{
+    background-image: url(imagenes/patroncubo.jpg);
+}
+
+.botonesEtiquetas
+
+    {
+        text-align: center;
+        padding: 0px;
+    }
+
+.botonesEtiquetas ul
+    {
+        list-style: none;
+        display: inline-block;
+        padding:18px;
+    }
+
+.botonesEtiquetas li 
+        {
+        display: inline;
+        
+
+        }
+
+.botonesEtiquetas li a    
+        {
+        font-size: 12px;
+        text-decoration: none;
+        float: left;
+        width: 150px;
+        padding: 10px;
+        background-color: black;
+        color:white;
+        border: solid 2px black;
+        transition: all 500ms;
+        }
+
+.botonesEtiquetas  li a:hover 
+        {
+        background-color: white;
+        color: black;
+        text-transform: uppercase;
+        border-radius: 55% ;
+        margin-top: -2;
+        padding-bottom: 12px;
+        box-shadow: 2px 2px 5px #999;
+        
+        }
+
+.tablaEtiquetas
+{
+    height:200px;
+    width:500px;
+    border: 2px solid black;
+    margin: auto;
+    overflow:scroll;
+    background-color: white;
+}
+
+.tablaEtiquetas td
+{
+    border: solid 2px black;
+}
+
+.tablaEtiquetas thead
+{
+    background-color: rgb(119, 65, 119);
+}
+
+.tag 
+{
+    display: block;
+    width: 300px;
+    margin: auto;
+}
+
+.etiquetasHTML th
+{
+    background-color: rgb(216, 128, 27);
+}
+
+.etiquetasCSS th
+{
+    background-color: rgb(80, 127, 180);
+}
+
+.logohtml
+
+{
+    display: block;
+    width: 25%;
+    margin-top: -175%;
+    padding: 0px 0px 0px 250px;
+}
+
+.logoCSS
+{
+    display: block;
+    width: 280px;
+    margin-top: 60%;
+    padding: 0px 0px 0px 350px;
+}
+
+
+/*Estilos generales*/
+
+*
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+
